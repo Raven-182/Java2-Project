@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="700.0" style="-fx-background-color: #880e4f#880e4f;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="85.0" prefHeight="499.0" prefWidth="703.0" style="-fx-background-color: #fce4ec;">
+         <children>
+            <TextField fx:id="addItemField" alignment="CENTER" layoutX="253.0" layoutY="52.0" prefHeight="32.0" prefWidth="206.0" promptText="Add item.." />
+            <Label layoutX="67.0" layoutY="131.0" prefHeight="32.0" prefWidth="126.0" text="Your Tasks">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="addButton" layoutX="479.0" layoutY="55.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="26.0" prefWidth="80.0" text="Add Task" />
+            <DatePicker fx:id="datePicker" layoutX="64.0" layoutY="54.0" prefHeight="26.0" prefWidth="156.0" promptText="Pick Date" />
+          <AnchorPane layoutX="7.0" layoutY="172.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="696.0">
+               <children>
+                  <ScrollPane layoutX="1.0" layoutY="-2.0" prefHeight="315.0" prefWidth="681.0">
+                     <content>
+                        <ListView fx:id="list" prefHeight="425.0" prefWidth="700.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="todolabel" alignment="CENTER" layoutX="252.0" layoutY="22.0" prefHeight="54.0" prefWidth="196.0" text="To-Do List" textFill="#fcfafa">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
